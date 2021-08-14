@@ -1,30 +1,25 @@
+<div align='center'>
 
-# Welcome to Codewell! 👋
+# Codewell - Fiber Landing Page
 
-Codewell's aim is to provide you with real-world design templates that you can use to practice your HTML and CSS projects. 
+Practicing CSS with [Fiber Landing Page](https://www.codewell.cc/challenges/608a7e639691700015db16d1) challenge.
 
-Free or paid, all templates are high quality and will make great portfolio pieces.
+![React](https://img.shields.io/badge/React-2e2e2e?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-2e2e2e?logo=typescript)
+![tailwindcss](https://img.shields.io/badge/Tailwind%20CSS-2e2e2e?logo=tailwindcss)
 
-### I've completed the challenge, now what?
+</div>
 
-We recommend using one of these two websites to deploy your projects
+![Fiber Landing Page Preview](https://codewell-storage-bucket.s3.us-east-2.amazonaws.com/Fiber_Landing_Page_min_03120604f3.jpg)
 
-- [GitHub Pages](https://pages.github.com/)
-- [Netlify](https://www.netlify.com/)
+## Setting up
 
-They're super easy to setup and you should have your website up and running in no time, just follow their instructions.
+1. Install dependencies
+	```bash
+	yarn install
+	```
 
-
-### Submit your solution to Codewell
-
-Visit the relevant challenge on [Codewell](https://codewell.cc) and click on 'Submit Solution' right under the challenge.
-Enter all the title, Github repo URL, Live URL (Netlify or GH Pages), and tell the community what challenges you've faced.
-
-### Join our community on Slack
-
-If you want more real-time communication, you can visit our community on [Slack](https://join.slack.com/t/codewell-hq/shared_invite/zt-ni8c9g8h-gNYWrmqQ3Uh37dcLg9~LMQ). 
-
-### Fonts Used
-
-https://fonts.google.com/specimen/Inter
-
+2. Run locally
+	```bash
+	yarn start
+	```
