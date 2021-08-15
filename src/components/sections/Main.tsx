@@ -13,41 +13,12 @@ import { Section } from '../layouts/Section';
 import { ButtonLink } from '../ButtonLink';
 import { Testimonial } from '../Testimonial';
 
-const testimonials = [
-  {
-    name: {
-      firstName: 'Sarah',
-      lastName: 'Andrews',
-    },
-    Avatar: SarahAvatar,
-    revenue: 100,
-    quote:
-      'Setting up my portfolio with Fiber took no more than 10 minutes. Since then, my portfolio has attracted a lot of clients and made me more than $100k.',
-    portfolioURL: '#',
-  },
-  {
-    name: {
-      firstName: 'Matthew',
-      lastName: 'Higgings',
-    },
-    Avatar: MatthewAvatar,
-    revenue: 20,
-    quote:
-      "I have been getting A LOT of leads ever since I used Fiber's premade templates, now I just need to work on my case studies and I'll be ready to go!",
-    portfolioURL: '#',
-  },
-  {
-    name: {
-      firstName: 'Janice',
-      lastName: 'Dave',
-    },
-    Avatar: JaniceAvatar,
-    revenue: 30,
-    quote:
-      'I only just started freelancing this year, and I have already made more than I ever in my full-time job. The templates are so amazing.',
-    portfolioURL: '#',
-  },
-];
+import testimonialsJson from '../../data/testimonials.json';
+
+const testimonials = testimonialsJson.map(testimonial => ({
+  ...testimonial,
+  Avatar: SarahAvatar,
+}));
 
 export const Main: React.FC = () => {
   return (

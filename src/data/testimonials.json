@@ -1,0 +1,29 @@
+[
+  {
+    "name": {
+      "firstName": "Sarah",
+      "lastName": "Andrews"
+    },
+    "revenue": "$100k",
+    "quote": "Setting up my portfolio with Fiber took no more than 10 minutes. Since then, my portfolio has attracted a lot of clients and made me more than $100k.",
+    "portfolioURL": "#"
+  },
+  {
+    "name": {
+      "firstName": "Matthew",
+      "lastName": "Higgings"
+    },
+    "revenue": "$20k",
+    "quote": "I have been getting A LOT of leads ever since I used Fiber's premade templates, now I just need to work on my case studies and I'll be ready to go!",
+    "portfolioURL": "#"
+  },
+  {
+    "name": {
+      "firstName": "Janice",
+      "lastName": "Dave"
+    },
+    "revenue": "$30k",
+    "quote": "I only just started freelancing this year, and I have already made more than I ever in my full-time job. The templates are so amazing.",
+    "portfolioURL": "#"
+  }
+]

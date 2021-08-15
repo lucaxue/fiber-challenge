@@ -4,7 +4,7 @@ import { ButtonLink } from './ButtonLink';
 type Testimonial = {
   name: { firstName: string; lastName: string };
   Avatar: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
-  revenue: number;
+  revenue: string;
   quote: string;
   portfolioURL: string;
 };
@@ -33,7 +33,7 @@ export const Testimonial: React.FC<Props> = ({
         <h4 className='text-indigo-600 text-sm font-bold'>
           {firstName} {lastName}
         </h4>
-        <p className='text-sm'>${revenue}k in revenue</p>
+        <p className='text-sm text-gray-600'>{revenue} in revenue</p>
       </div>
     </div>
     <p>{quote}</p>
