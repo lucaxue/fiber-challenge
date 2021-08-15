@@ -30,9 +30,9 @@ export const Testimonial: React.FC<Props> = ({
     <div className='flex items-center gap-4'>
       <Avatar width='45' />
       <div>
-        <h3 className='text-indigo-600 text-sm font-bold'>
+        <h4 className='text-indigo-600 text-sm font-bold'>
           {firstName} {lastName}
-        </h3>
+        </h4>
         <p className='text-sm'>${revenue}k in revenue</p>
       </div>
     </div>

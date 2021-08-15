@@ -12,7 +12,7 @@ export const Section: React.FC<Props> = ({
   children,
 }) => {
   return (
-    <Wrapper className={`min-h-screen ${className}`}>
+    <Wrapper className={className}>
       <div className='container max-w-screen-lg mx-auto'>{children}</div>
     </Wrapper>
   );

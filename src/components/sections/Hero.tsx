@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 
 export const Hero: React.FC = () => {
   return (
-    <Section as='header' className='bg-yellow-50'>
+    <Section as='header' className='bg-yellow-50 min-h-screen'>
       <NavBar />
       <div className='flex mt-10'>
         <div className='w-1/2 flex flex-col justify-center gap-4'>

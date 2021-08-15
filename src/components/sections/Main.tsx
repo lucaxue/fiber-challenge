@@ -62,7 +62,7 @@ export const Main: React.FC = () => {
         <div className='flex w-full gap-10 my-8'>
           <div className='flex-1 flex flex-col gap-4'>
             <Time />
-            <h3 className='text-sm font-bold'>Build in minutes</h3>
+            <h4 className='text-sm font-bold'>Build in minutes</h4>
             <p className='text-gray-500'>
               With a selection of premade templates, you can build out a
               portfolio in less than 10 minutes.
@@ -70,7 +70,7 @@ export const Main: React.FC = () => {
           </div>
           <div className='flex-1 flex flex-col gap-4'>
             <Code />
-            <h3 className='text-sm font-bold'>Add custom CSS</h3>
+            <h4 className='text-sm font-bold'>Add custom CSS</h4>
             <p className='text-gray-500'>
               Customize your personal portfolio even with the ability to add
               your own CSS styles.
@@ -78,7 +78,7 @@ export const Main: React.FC = () => {
           </div>
           <div className='flex-1 flex flex-col gap-4'>
             <AllSizes />
-            <h3 className='text-sm font-bold'>Responsive</h3>
+            <h4 className='text-sm font-bold'>Responsive</h4>
             <p className='text-gray-500'>
               All Fiber templates are fully responsive to ensure the experience
               is seemless across all devices
