@@ -1,17 +1,19 @@
 import React from 'react';
+
 import hero from '../../assets/hero-illustration.png';
+import { ReactComponent as Checkmark } from '../../assets/checkmark.svg';
+import { ReactComponent as Star } from '../../assets/star.svg';
+
+import { Section } from '../layouts/Section';
+import { NavBar } from '../NavBar';
 import { ButtonLink } from '../ButtonLink';
 import { Link } from 'react-router-dom';
-import { ReactComponent as Checkmark } from '../../assets/Checkmark.svg';
-import { ReactComponent as Star } from '../../assets/star.svg';
-import { NavBar } from '../NavBar';
-import { Section } from '../layouts/Section';
 
 export const Hero: React.FC = () => {
   return (
-    <Section className='bg-yellow-50'>
+    <Section as='header' className='bg-yellow-50'>
       <NavBar />
-      <div className='mt-10 flex'>
+      <div className='flex mt-10'>
         <div className='w-1/2 flex flex-col justify-center gap-4'>
           <div className='flex items-center gap-2'>
             {[1, 2, 3, 4, 5].map(i => (

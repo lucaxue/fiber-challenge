@@ -2,9 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ButtonLink } from './ButtonLink';
 
-export const NavBar: React.FC = () => {
+interface Props {
+  className?: string;
+}
+
+export const NavBar: React.FC<Props> = ({ className }) => {
   return (
-    <nav className='flex justify-between w-full py-8 items-center relative'>
+    <nav
+      className={`flex justify-between w-full py-8 items-center relative ${className}`}
+    >
       <Link to='/'>
         <h1 className='font-bold'>Fiber</h1>
       </Link>
@@ -20,9 +26,7 @@ export const NavBar: React.FC = () => {
         </li>
       </ul>
       <div className='flex items-center gap-8'>
-        <Link to='/sign-in'>
-          <h1 className='font-bold'>Sign In</h1>
-        </Link>
+        <Link to='/sign-in font-bold'>Sign In</Link>
         <ButtonLink to='/sign-up'>Sign Up</ButtonLink>
       </div>
     </nav>

@@ -3,14 +3,29 @@ import { Link } from 'react-router-dom';
 
 interface Props {
   to: string;
-  children: string;
+  className?: string;
+  color?: 'primary' | 'secondary';
+  stretch?: boolean;
+  children: string | string[];
 }
 
-export const ButtonLink: React.FC<Props> = ({ to, children }) => (
-  <Link
-    to={to}
-    className='bg-indigo-600 rounded-md py-3 px-6 font-semibold text-white'
-  >
-    {children}
-  </Link>
-);
+export const ButtonLink: React.FC<Props> = ({
+  to,
+  color = 'primary',
+  stretch = false,
+  className = '',
+  children,
+}) => {
+  return (
+    <Link
+      to={to}
+      className={`rounded-md py-3 px-6 font-semibold text-center ${
+        color === 'primary'
+          ? 'bg-indigo-600 text-white'
+          : 'bg-white text-indigo-600'
+      } ${!stretch && 'max-w-max'} ${className}`}
+    >
+      {children}
+    </Link>
+  );
+};
