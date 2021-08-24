@@ -5,20 +5,11 @@ import { ReactComponent as Time } from '../../assets/time.svg';
 import { ReactComponent as Code } from '../../assets/code.svg';
 import { ReactComponent as AllSizes } from '../../assets/allSizes.svg';
 
-import { ReactComponent as SarahAvatar } from '../../assets/user-avatar-1.svg';
-// import { ReactComponent as MatthewAvatar } from '../../assets/user-avatar-2.svg';
-// import { ReactComponent as JaniceAvatar } from '../../assets/user-avatar-3.svg';
-
 import { Section } from '../layouts/Section';
 import { ButtonLink } from '../ButtonLink';
-import { Testimonial } from '../Testimonial';
+import { TestimonialCard } from '../TestimonialCard';
 
-import testimonialsJson from '../../data/testimonials.json';
-
-const testimonials = testimonialsJson.map(testimonial => ({
-  ...testimonial,
-  Avatar: SarahAvatar,
-}));
+import testimonials from '../../data/testimonials.json';
 
 export const Main: React.FC = () => {
   return (
@@ -80,7 +71,7 @@ export const Main: React.FC = () => {
 
       <div className='flex sm:flex-row flex-col overflow-x-auto flex-nowrap my-16 gap-8'>
         {testimonials.map((testimonial, i) => (
-          <Testimonial
+          <TestimonialCard
             key={i}
             data={testimonial}
             className='flex-none sm:w-96 w-full'

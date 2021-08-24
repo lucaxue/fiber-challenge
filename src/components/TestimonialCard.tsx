@@ -2,11 +2,11 @@ import React from 'react';
 import { ButtonLink } from './ButtonLink';
 
 type Testimonial = {
-  name: { firstName: string; lastName: string };
-  Avatar: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
+  name: { first_name: string; last_name: string };
+  avatar_file: string;
   revenue: string;
   quote: string;
-  portfolioURL: string;
+  portfolio_url: string;
 };
 
 interface Props {
@@ -14,13 +14,13 @@ interface Props {
   className?: string;
 }
 
-export const Testimonial: React.FC<Props> = ({
+export const TestimonialCard: React.FC<Props> = ({
   data: {
-    name: { firstName, lastName },
-    Avatar,
+    name: { first_name, last_name },
+    avatar_file,
     revenue,
     quote,
-    portfolioURL,
+    portfolio_url,
   },
   className = '',
 }) => (
@@ -28,22 +28,26 @@ export const Testimonial: React.FC<Props> = ({
     className={`grid border border-gray-200 rounded p-6 bg-white w-96 gap-4 ${className}`}
   >
     <div className='flex items-center gap-4'>
-      <Avatar width='45' />
+      <img
+        src={require(`../assets/${avatar_file}`).default}
+        alt={`${first_name} ${last_name}`}
+        width='45'
+      />
       <div>
         <h4 className='text-indigo-600 text-sm font-bold'>
-          {firstName} {lastName}
+          {first_name} {last_name}
         </h4>
         <p className='text-sm text-gray-600'>{revenue} in revenue</p>
       </div>
     </div>
     <p className='sm:text-base text-lg'>{quote}</p>
     <ButtonLink
-      to={portfolioURL}
+      to={portfolio_url}
       color='secondary'
       className='border border-gray-200'
       stretch
     >
-      View {firstName}'s Portfolio
+      View {first_name}'s Portfolio
     </ButtonLink>
   </div>
 );
