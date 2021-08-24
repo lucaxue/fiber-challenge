@@ -3,8 +3,8 @@ import { Section } from '../layouts/Section';
 
 export const Footer: React.FC = () => (
   <Section as='footer' className='bg-yellow-50'>
-    <div className='flex sm:flex-row flex-col py-16 sm:gap-4 gap-8'>
-      <div className='sm:w-2/5 flex flex-col gap-2'>
+    <div className='flex md:flex-row flex-col py-16 md:gap-4 gap-8'>
+      <div className='md:w-2/5 flex flex-col gap-2'>
         <h3 className='sm:font-bold font-semibold sm:text-lg text-xl'>Fiber</h3>
         <p className='text-gray-500 sm:text-base text-lg'>
           With Fiber, you can setup your own personal portfolio in minutes with
@@ -14,12 +14,12 @@ export const Footer: React.FC = () => (
           Made with ♥ in the Netherlands.
         </p>
       </div>
-      <div className='flex sm:flex-row flex-col sm:w-3/5 sm:gap-0 gap-8'>
+      <div className='flex sm:flex-row flex-col md:w-3/5 sm:gap-0 gap-8'>
         <div className='flex-1'>
           <h3 className='sm:font-bold font-semibold mb-2 sm:text-lg text-xl'>
             Sitemap
           </h3>
-          <ul className='grid gap-2 text-gray-500 sm:text-base text-lg'>
+          <ul className='grid gap-2 text-gray-500 md:text-base text-lg'>
             <li>Homepage</li>
             <li>Pricing</li>
             <li>Testimonials</li>
@@ -27,7 +27,7 @@ export const Footer: React.FC = () => (
           </ul>
         </div>
         <div className='flex-1'>
-          <h3 className='sm:font-bold font-semibold mb-2 sm:text-lg text-xl'>
+          <h3 className='sm:font-bold font-semibold mb-2 md:re-lg text-xl'>
             Resources
           </h3>
           <ul className='grid gap-2 text-gray-500 sm:text-base text-lg'>

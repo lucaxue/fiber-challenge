@@ -72,7 +72,7 @@ export const Main: React.FC = () => {
           </ButtonLink>
         </div>
         <img
-          className='sm:w-7/12 sm:pt-8 sm:pr-8 px-8'
+          className='sm:w-7/12 sm:pt-8 sm:pr-8 px-8 object-cover'
           src={page}
           alt='Case studies page preview.'
         />

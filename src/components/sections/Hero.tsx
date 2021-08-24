@@ -15,7 +15,7 @@ export const Hero: React.FC = () => {
       <NavBar />
       <div className='flex sm:flex-row flex-col flex-col-reverse items-center sm:my-10 -mt-16'>
         <div className='sm:w-1/2 flex flex-col justify-center gap-4'>
-          <div className='sm:flex items-center gap-2 hidden'>
+          <div className='md:flex items-center gap-2 hidden'>
             {[1, 2, 3, 4, 5].map(i => (
               <Star key={i} />
             ))}
