@@ -10,12 +10,12 @@ interface Props {
 
 export const NavBar: React.FC<Props> = ({ className }) => {
   const [dropdownIsShown, setDropdownIsShown] = useState(false);
-  function toggleDropdown() {
-    setDropdownIsShown(!dropdownIsShown);
-  }
+  const toggleDropdown = () => setDropdownIsShown(!dropdownIsShown);
+
   document.body.className = dropdownIsShown
     ? 'overflow-hidden'
     : 'overflow-auto';
+
   return (
     <>
       <nav
@@ -47,33 +47,27 @@ export const NavBar: React.FC<Props> = ({ className }) => {
           <HamburgerMenu onClick={toggleDropdown} className='cursor-pointer' />
         </div>
       </nav>
-      <div
-        className={`${
-          dropdownIsShown ? 'h-screen' : 'h-0'
-        } overflow-hidden transition-all duration-500 w-full`}
-      >
-        <ul className='flex flex-col gap-2 text-lg'>
-          <li>
-            <Link to='/community'>Community</Link>
-          </li>
-          <li>
-            <Link to='/pricing'>Pricing</Link>
-          </li>
-          <li>
-            <Link to='/features'>Features</Link>
-          </li>
-        </ul>
-        <div
-          className={`flex justify-between items-center gap-8 ${
-            dropdownIsShown && 'fixed bottom-10 right-10'
-          }`}
-        >
-          <Link to='/sign-in'>
-            <h3 className='font-bold text-lg'>Sign In</h3>
-          </Link>
-          <ButtonLink to='/sign-up'>Sign Up</ButtonLink>
+      {dropdownIsShown && (
+        <div className='h-screen w-full'>
+          <ul className='flex flex-col gap-2 text-lg'>
+            <li>
+              <Link to='/community'>Community</Link>
+            </li>
+            <li>
+              <Link to='/pricing'>Pricing</Link>
+            </li>
+            <li>
+              <Link to='/features'>Features</Link>
+            </li>
+          </ul>
+          <div className='flex justify-between items-center gap-8 fixed bottom-10 right-10'>
+            <Link to='/sign-in'>
+              <h3 className='font-bold text-lg'>Sign In</h3>
+            </Link>
+            <ButtonLink to='/sign-up'>Sign Up</ButtonLink>
+          </div>
         </div>
-      </div>
+      )}
     </>
   );
 };
