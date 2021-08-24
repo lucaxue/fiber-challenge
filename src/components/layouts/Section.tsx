@@ -13,7 +13,9 @@ export const Section: React.FC<Props> = ({
 }) => {
   return (
     <Wrapper className={className}>
-      <div className='container max-w-screen-lg mx-auto'>{children}</div>
+      <div className='container max-w-screen-lg mx-auto xl:px-0 px-10 overflow-hidden'>
+        {children}
+      </div>
     </Wrapper>
   );
 };

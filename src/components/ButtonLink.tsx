@@ -15,17 +15,15 @@ export const ButtonLink: React.FC<Props> = ({
   stretch = false,
   className = '',
   children,
-}) => {
-  return (
-    <Link
-      to={to}
-      className={`rounded-md py-3 px-6 font-semibold text-lg text-center ${
-        color === 'primary'
-          ? 'bg-indigo-600 text-white'
-          : 'bg-white text-indigo-600'
-      } ${!stretch && 'max-w-max'} ${className}`}
-    >
-      {children}
-    </Link>
-  );
-};
+}) => (
+  <Link
+    to={to}
+    className={`rounded-md py-3 px-6 font-semibold text-lg text-center ${
+      color === 'primary'
+        ? 'bg-indigo-600 text-white'
+        : 'bg-white text-indigo-600'
+    } ${!stretch && 'max-w-max'} ${className}`}
+  >
+    {children}
+  </Link>
+);

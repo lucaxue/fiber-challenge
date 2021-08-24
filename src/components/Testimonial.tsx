@@ -36,7 +36,7 @@ export const Testimonial: React.FC<Props> = ({
         <p className='text-sm text-gray-600'>{revenue} in revenue</p>
       </div>
     </div>
-    <p>{quote}</p>
+    <p className='sm:text-base text-lg'>{quote}</p>
     <ButtonLink
       to={portfolioURL}
       color='secondary'
