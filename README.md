@@ -3,6 +3,7 @@
 # Codewell - Fiber Landing Page
 
 Practicing CSS with [Fiber Landing Page](https://www.codewell.cc/challenges/608a7e639691700015db16d1) challenge.
+Visit the [site](https://fiber-challenge.netlify.app/) here.
 
 ![React](https://img.shields.io/badge/React-2e2e2e?logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-2e2e2e?logo=typescript)
@@ -10,7 +11,11 @@ Practicing CSS with [Fiber Landing Page](https://www.codewell.cc/challenges/608a
 
 </div>
 
+<a href='https://fiber-challenge.netlify.app/'>
+
 ![Fiber Landing Page Preview](https://codewell-storage-bucket.s3.us-east-2.amazonaws.com/Fiber_Landing_Page_min_03120604f3.jpg)
+
+</a>
 
 ## Setting up
 
