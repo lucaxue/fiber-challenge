@@ -13,7 +13,7 @@ import testimonials from '../../data/testimonials.json';
 
 export const Main: React.FC = () => (
   <Section as='main'>
-    <div className='py-8'>
+    <div id='features' className='py-8'>
       <div className='sm:w-1/2 flex flex-col gap-4 my-8'>
         <p className='text-indigo-600 font-semibold'>Why Fiber?</p>
         <h2 className='sm:text-3xl text-4xl sm:font-bold font-semibold'>
@@ -48,7 +48,10 @@ export const Main: React.FC = () => (
       </div>
     </div>
 
-    <div className='flex sm:flex-row flex-col bg-indigo-600 rounded-md'>
+    <div
+      id='pricing'
+      className='flex sm:flex-row flex-col bg-indigo-600 rounded-md'
+    >
       <div className='flex flex-col gap-4 sm:w-5/12 px-8 self-center py-10'>
         <h2 className='sm:text-3xl text-4xl text-white sm:font-bold font-semibold'>
           Diversify your portfolio.
@@ -57,7 +60,12 @@ export const Main: React.FC = () => (
           Create an even more impressive portfolio by creating case studies for
           your projects. Simply follow our step-by-step guide.
         </p>
-        <ButtonLink color='secondary' to='#' className='sm:max-w-max' stretch>
+        <ButtonLink
+          color='secondary'
+          to='/sign-up'
+          className='sm:max-w-max'
+          stretch
+        >
           Start Free Trial
         </ButtonLink>
       </div>
@@ -68,7 +76,10 @@ export const Main: React.FC = () => (
       />
     </div>
 
-    <div className='flex sm:flex-row flex-col overflow-x-auto flex-nowrap my-16 gap-8'>
+    <div
+      id='testimonials'
+      className='flex sm:flex-row flex-col overflow-x-auto flex-nowrap my-16 gap-8'
+    >
       {testimonials.map((testimonial, i) => (
         <TestimonialCard
           key={i}

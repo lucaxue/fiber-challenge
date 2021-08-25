@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import { Link } from 'react-router-dom';
 import { ButtonLink } from './ButtonLink';
 
@@ -28,18 +29,24 @@ export const NavBar: React.FC<Props> = ({ className }) => {
         </Link>
         <ul className='md:flex hidden gap-4 items-center text-gray-600 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
           <li>
-            <Link to='/community'>Community</Link>
+            <a className='hover:underline' href='#testimonials'>
+              Community
+            </a>
           </li>
           <li>
-            <Link to='/pricing'>Pricing</Link>
+            <a className='hover:underline' href='#pricing'>
+              Pricing
+            </a>
           </li>
           <li>
-            <Link to='/features'>Features</Link>
+            <a className='hover:underline' href='#features'>
+              Features
+            </a>
           </li>
         </ul>
         <div className='md:flex hidden items-center gap-8'>
-          <Link to='/sign-in'>
-            <h3 className='font-bold text-lg'>Sign In</h3>
+          <Link to='/sign-up'>
+            <h3 className='font-bold text-lg hover:underline'>Sign In</h3>
           </Link>
           <ButtonLink to='/sign-up'>Sign Up</ButtonLink>
         </div>
@@ -51,18 +58,36 @@ export const NavBar: React.FC<Props> = ({ className }) => {
         <div className='h-screen w-full'>
           <ul className='flex flex-col gap-2 text-lg'>
             <li>
-              <Link to='/community'>Community</Link>
+              <a
+                className='hover:underline'
+                href='#testimonials'
+                onClick={toggleDropdown}
+              >
+                Community
+              </a>
             </li>
             <li>
-              <Link to='/pricing'>Pricing</Link>
+              <a
+                className='hover:underline'
+                href='#pricing'
+                onClick={toggleDropdown}
+              >
+                Pricing
+              </a>
             </li>
             <li>
-              <Link to='/features'>Features</Link>
+              <a
+                className='hover:underline'
+                href='#features'
+                onClick={toggleDropdown}
+              >
+                Features
+              </a>
             </li>
           </ul>
           <div className='flex justify-between items-center gap-8 fixed bottom-10 right-10'>
-            <Link to='/sign-in'>
-              <h3 className='font-bold text-lg'>Sign In</h3>
+            <Link to='/sign-up'>
+              <h3 className='font-bold text-lg hover:underline'>Sign In</h3>
             </Link>
             <ButtonLink to='/sign-up'>Sign Up</ButtonLink>
           </div>

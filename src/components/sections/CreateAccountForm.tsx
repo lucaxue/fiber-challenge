@@ -6,7 +6,7 @@ export const CreateAccountForm: React.FC = () => (
   <>
     <Link
       to='/'
-      className='flex items-center my-8 py-3 sm:font-bold font-semibold sm:text-lg text-xl'
+      className='flex items-center my-8 md:py-3 sm:font-bold font-semibold sm:text-lg text-xl hover:underline'
     >
       Fiber
     </Link>
@@ -72,20 +72,23 @@ export const CreateAccountForm: React.FC = () => (
           />
           <label htmlFor='terms-and-conditions'>
             By creating an account on Fiber, you agree to the{' '}
-            <Link to='#' className='font-bold text-indigo-600 underline'>
+            <a
+              href='#'
+              className='hover:no-underline font-bold text-indigo-600 underline'
+            >
               Terms & Conditions
-            </Link>
+            </a>
           </label>
         </div>
 
-        <ButtonLink to='#' stretch>
+        <ButtonLink to='/' stretch>
           Create Fiber Account
         </ButtonLink>
 
         <div className='flex justify-center -mt-4'>
           <span>
             Already have an account?{' '}
-            <Link to='/sign-in' className='text-indigo-600'>
+            <Link to='/sign-up' className='text-indigo-600 hover:underline'>
               Sign in
             </Link>
           </span>

@@ -25,6 +25,7 @@ export const TestimonialCard: React.FC<Props> = ({
   className = '',
 }) => (
   <div
+    id={`${first_name.toLowerCase()}-${last_name.toLowerCase()}`}
     className={`grid border border-gray-200 rounded p-6 bg-white w-96 gap-4 ${className}`}
   >
     <div className='flex items-center gap-4'>

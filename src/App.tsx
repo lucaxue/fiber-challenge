@@ -7,10 +7,6 @@ export const App: React.FC = () => (
   <Router>
     <Switch>
       <Route path='/sign-up' component={SignUp} />
-      <Route path='/sign-in' />
-      <Route path='/features' />
-      <Route path='/pricing' />
-      <Route path='/community' />
       <Route path='/' component={Home} />
     </Switch>
   </Router>

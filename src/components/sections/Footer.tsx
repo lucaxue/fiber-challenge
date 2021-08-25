@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Section } from '../layouts/Section';
 
 export const Footer: React.FC = () => (
@@ -20,10 +21,26 @@ export const Footer: React.FC = () => (
             Sitemap
           </h3>
           <ul className='grid gap-2 text-gray-500 md:text-base text-lg'>
-            <li>Homepage</li>
-            <li>Pricing</li>
-            <li>Testimonials</li>
-            <li>Features</li>
+            <li>
+              <a className='hover:underline' href='#'>
+                Homepage
+              </a>
+            </li>
+            <li>
+              <a className='hover:underline' href='#pricing'>
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a className='hover:underline' href='#testimonials'>
+                Testimonials
+              </a>
+            </li>
+            <li>
+              <a className='hover:underline' href='#features'>
+                Features
+              </a>
+            </li>
           </ul>
         </div>
         <div className='flex-1'>
@@ -31,9 +48,21 @@ export const Footer: React.FC = () => (
             Resources
           </h3>
           <ul className='grid gap-2 text-gray-500 sm:text-base text-lg'>
-            <li>Support</li>
-            <li>Contact</li>
-            <li>FAQ</li>
+            <li>
+              <a className='hover:underline' href='#'>
+                Support
+              </a>
+            </li>
+            <li>
+              <a className='hover:underline' href='#'>
+                Contact
+              </a>
+            </li>
+            <li>
+              <a className='hover:underline' href='#'>
+                FAQ
+              </a>
+            </li>
           </ul>
         </div>
         <div className='flex-1'>
@@ -41,9 +70,21 @@ export const Footer: React.FC = () => (
             Company
           </h3>
           <ul className='grid gap-2 text-gray-500 sm:text-base text-lg'>
-            <li>About</li>
-            <li>Customers</li>
-            <li>Blog</li>
+            <li>
+              <a className='hover:underline' href='#'>
+                About
+              </a>
+            </li>
+            <li>
+              <a className='hover:underline' href='#'>
+                Customers
+              </a>
+            </li>
+            <li>
+              <a className='hover:underline' href='#'>
+                Blog
+              </a>
+            </li>
           </ul>
         </div>
         <div className='flex-1'>
@@ -51,9 +92,21 @@ export const Footer: React.FC = () => (
             Portfolios
           </h3>
           <ul className='grid gap-2 text-gray-500 sm:text-base text-lg'>
-            <li>Sarah Andrews</li>
-            <li>Matthew Higgins</li>
-            <li>Janice Dave</li>
+            <li>
+              <a className='hover:underline' href='#sarah-andrews'>
+                Sarah Andrews
+              </a>
+            </li>
+            <li>
+              <a className='hover:underline' href='#matthew-higgings'>
+                Matthew Higgings
+              </a>
+            </li>
+            <li>
+              <a className='hover:underline' href='#janice-dave'>
+                Janice Dave
+              </a>
+            </li>
           </ul>
         </div>
       </div>

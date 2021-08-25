@@ -7,7 +7,6 @@ import { ReactComponent as Star } from '../../assets/star.svg';
 import { Section } from '../layouts/Section';
 import { NavBar } from '../NavBar';
 import { ButtonLink } from '../ButtonLink';
-import { Link } from 'react-router-dom';
 
 export const Hero: React.FC = () => (
   <Section as='header' className='bg-yellow-50 xl:min-h-screen'>
@@ -28,12 +27,15 @@ export const Hero: React.FC = () => (
           dozens of premade, beautiful templates.
         </p>
         <div className='flex sm:flex-row flex-col items-center sm:gap-8 gap-4 relative'>
-          <ButtonLink to='#' className='md:max-w-max w-full' stretch>
+          <ButtonLink to='/sign-up' className='md:max-w-max w-full' stretch>
             Start Free Trial
           </ButtonLink>
-          <Link to='#' className='font-bold text-indigo-600 underline'>
+          <a
+            href='#testimonials'
+            className='font-bold text-indigo-600 underline hover:no-underline'
+          >
             View Examples
-          </Link>
+          </a>
         </div>
         <div className='flex sm:flex-row flex-col sm:items-center gap-4 sm:pb-0 pb-10'>
           <div className='flex gap-2'>
