@@ -48,7 +48,7 @@ export const Hero: React.FC = () => (
           </div>
         </div>
       </div>
-      <img className='sm:w-1/2 mb-8' src={hero} alt='Hero Illustration' />
+        <img className='sm:w-1/2 mb-8' src={hero} alt='Hero Illustration' />
     </div>
   </Section>
 );
