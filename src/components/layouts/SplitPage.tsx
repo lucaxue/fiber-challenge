@@ -16,8 +16,8 @@ export const SplitPage: React.FC<Props> = ({
 }) => (
   <Section as='main' className={className} style={style}>
     <div className='flex w-full min-h-screen'>
-      <div className='w-1/2'>{firstPage}</div>
-      <div className='w-1/2'>{secondPage}</div>
+      <div className='lg:w-1/2 w-full'>{firstPage}</div>
+      <div className='lg:w-1/2 lg:flex hidden'>{secondPage}</div>
     </div>
   </Section>
 );
