@@ -29,17 +29,17 @@ export const NavBar: React.FC<Props> = ({ className }) => {
         </Link>
         <ul className='md:flex hidden gap-4 items-center text-gray-600 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
           <li>
-            <a className='hover:underline' href='#testimonials'>
+            <a className='hover:underline' href='/#testimonials'>
               Community
             </a>
           </li>
           <li>
-            <a className='hover:underline' href='#pricing'>
+            <a className='hover:underline' href='/#pricing'>
               Pricing
             </a>
           </li>
           <li>
-            <a className='hover:underline' href='#features'>
+            <a className='hover:underline' href='/#features'>
               Features
             </a>
           </li>
@@ -60,7 +60,7 @@ export const NavBar: React.FC<Props> = ({ className }) => {
             <li>
               <a
                 className='hover:underline'
-                href='#testimonials'
+                href='/#testimonials'
                 onClick={toggleDropdown}
               >
                 Community
@@ -69,7 +69,7 @@ export const NavBar: React.FC<Props> = ({ className }) => {
             <li>
               <a
                 className='hover:underline'
-                href='#pricing'
+                href='/#pricing'
                 onClick={toggleDropdown}
               >
                 Pricing
@@ -78,7 +78,7 @@ export const NavBar: React.FC<Props> = ({ className }) => {
             <li>
               <a
                 className='hover:underline'
-                href='#features'
+                href='/#features'
                 onClick={toggleDropdown}
               >
                 Features

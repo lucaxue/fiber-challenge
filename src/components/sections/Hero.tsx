@@ -31,7 +31,7 @@ export const Hero: React.FC = () => (
             Start Free Trial
           </ButtonLink>
           <a
-            href='#testimonials'
+            href='/#testimonials'
             className='font-bold text-indigo-600 underline hover:no-underline'
           >
             View Examples

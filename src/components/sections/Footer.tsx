@@ -22,22 +22,22 @@ export const Footer: React.FC = () => (
           </h3>
           <ul className='grid gap-2 text-gray-500 md:text-base text-lg'>
             <li>
-              <a className='hover:underline' href='#'>
+              <a className='hover:underline' href='/#'>
                 Homepage
               </a>
             </li>
             <li>
-              <a className='hover:underline' href='#pricing'>
+              <a className='hover:underline' href='/#pricing'>
                 Pricing
               </a>
             </li>
             <li>
-              <a className='hover:underline' href='#testimonials'>
+              <a className='hover:underline' href='/#testimonials'>
                 Testimonials
               </a>
             </li>
             <li>
-              <a className='hover:underline' href='#features'>
+              <a className='hover:underline' href='/#features'>
                 Features
               </a>
             </li>
@@ -49,17 +49,17 @@ export const Footer: React.FC = () => (
           </h3>
           <ul className='grid gap-2 text-gray-500 sm:text-base text-lg'>
             <li>
-              <a className='hover:underline' href='#'>
+              <a className='hover:underline' href='/#'>
                 Support
               </a>
             </li>
             <li>
-              <a className='hover:underline' href='#'>
+              <a className='hover:underline' href='/#'>
                 Contact
               </a>
             </li>
             <li>
-              <a className='hover:underline' href='#'>
+              <a className='hover:underline' href='/#'>
                 FAQ
               </a>
             </li>
@@ -71,17 +71,17 @@ export const Footer: React.FC = () => (
           </h3>
           <ul className='grid gap-2 text-gray-500 sm:text-base text-lg'>
             <li>
-              <a className='hover:underline' href='#'>
+              <a className='hover:underline' href='/#'>
                 About
               </a>
             </li>
             <li>
-              <a className='hover:underline' href='#'>
+              <a className='hover:underline' href='/#'>
                 Customers
               </a>
             </li>
             <li>
-              <a className='hover:underline' href='#'>
+              <a className='hover:underline' href='/#'>
                 Blog
               </a>
             </li>
@@ -93,17 +93,17 @@ export const Footer: React.FC = () => (
           </h3>
           <ul className='grid gap-2 text-gray-500 sm:text-base text-lg'>
             <li>
-              <a className='hover:underline' href='#sarah-andrews'>
+              <a className='hover:underline' href='/#sarah-andrews'>
                 Sarah Andrews
               </a>
             </li>
             <li>
-              <a className='hover:underline' href='#matthew-higgings'>
+              <a className='hover:underline' href='/#matthew-higgings'>
                 Matthew Higgings
               </a>
             </li>
             <li>
-              <a className='hover:underline' href='#janice-dave'>
+              <a className='hover:underline' href='/#janice-dave'>
                 Janice Dave
               </a>
             </li>

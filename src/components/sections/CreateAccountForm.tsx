@@ -72,12 +72,12 @@ export const CreateAccountForm: React.FC = () => (
           />
           <label htmlFor='terms-and-conditions'>
             By creating an account on Fiber, you agree to the{' '}
-            <a
-              href='#'
+            <Link
+              to='/sign-up'
               className='hover:no-underline font-bold text-indigo-600 underline'
             >
               Terms & Conditions
-            </a>
+            </Link>
           </label>
         </div>
 
