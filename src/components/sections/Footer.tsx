@@ -62,7 +62,7 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
           <div className='flex-1'>
-            <h3 className='sm:font-bold font-semibold mb-2 md:re-lg text-xl'>
+            <h3 className='sm:font-bold font-semibold mb-2 sm:text-lg text-xl'>
               Resources
             </h3>
             <ul className='grid gap-2 text-gray-500 sm:text-base text-lg'>
