@@ -9,7 +9,7 @@ import { NavBar } from '../NavBar';
 import { ButtonLink } from '../ButtonLink';
 
 export const Hero: React.FC = () => (
-  <Section as='header' className='bg-yellow-50 xl:min-h-screen'>
+  <Section as='header' className='bg-yellow-50'>
     <NavBar />
     <div className='flex sm:flex-row flex-col-reverse items-center sm:my-10 -mt-16'>
       <div className='sm:w-1/2 flex flex-col justify-center gap-4'>
